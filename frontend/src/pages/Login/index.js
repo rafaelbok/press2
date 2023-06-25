@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: "url(https://mkthub.tech/wp-content/uploads/2022/02/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall-1-scaled-1.jpg)",
+    backgroundImage: "url(https://wasap.com.br/wp-content/uploads/2023/06/background_wasap.jpg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 100%",
     backgroundPosition: "center",
@@ -144,11 +144,11 @@ const Login = () => {
 
           <Typography variant="body2" color="textSecondary" align="center">
             <Link color="inherit" href={system.url}>
-              {system.name} - CNPJ: 34.211.165/0001-24
+              {system.name}
               <br></br>
               Todos os direitos reservados - <b>v{systemVersion}</b>
               <br></br>
-              © 2022 - {new Date().getFullYear()}
+              © {new Date().getFullYear()}
             </Link>
             {"."}
           </Typography>
