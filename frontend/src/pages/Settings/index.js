@@ -211,7 +211,7 @@ const Settings = () => {
 								</Tooltip>
 							</Paper>
 
-							{/*<Typography variant="body2" gutterBottom></Typography>
+							<Typography variant="body2" gutterBottom></Typography>
 
 							<Paper className={classes.paper}>
 								<Tooltip title={i18n.t("settings.settings.CheckMsgIsGroup.note")}>
@@ -224,9 +224,9 @@ const Settings = () => {
 										} label={i18n.t("settings.settings.CheckMsgIsGroup.name")}
 									/>
 								</Tooltip>
-							</Paper> */}
+							</Paper> 
 
-							<Typography variant="body2" gutterBottom></Typography>
+							{/*<Typography variant="body2" gutterBottom></Typography>
 							<Paper className={classes.paper}>
 								<Tooltip title={i18n.t("settings.settings.call.note")}>
 									<FormControlLabel
@@ -238,7 +238,7 @@ const Settings = () => {
 										label={i18n.t("settings.settings.call.name")}
 									/>
 								</Tooltip>
-							</Paper>
+							</Paper>*/}
 
 							<Typography variant="body2" gutterBottom></Typography>
 							<Paper className={classes.paper}>
