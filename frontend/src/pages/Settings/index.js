@@ -176,7 +176,7 @@ const Settings = () => {
 
 		<div className={classes.root}>
 			<Paper className={classes.paper} style={{ margin: '10px' }}>
-				<Typography variant="h6"><b>Configura&ccedil;&otilde;es Gerais WaSap</b></Typography>
+				<Typography variant="h6"><b>Configura&ccedil;&otilde;es Gerais do WaSap</b></Typography>
 			</Paper>
 			<div maxWidth="sm">
 				<div style={{ display: 'flex' }}>
@@ -253,12 +253,6 @@ const Settings = () => {
 									/>
 								</Tooltip>
 							</Paper>
-
-						</Container>
-					</div>
-					<div style={{ width: '50%', paddingLeft: '10px' }}>
-						<Container className={classes.container} maxWidth="xs">
-
 
 
 							<Typography variant="body2" gutterBottom></Typography>
