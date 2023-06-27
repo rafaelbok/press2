@@ -9,7 +9,7 @@
           "secondary": "#5a01a9"
         },
         "toolbar": {
-          "background-color": "#9456ff"
+          "background": "linear-gradient(to right, #9456ff, #9456ff)"
         },
         "menuItens": "#ffffff",
         "sub": "#ffffff",
@@ -30,7 +30,7 @@
           }
         },
         "toolbar": {
-          "background-color": "#000000)"
+          "background": "linear-gradient(to right, #000000, #000000)"
         },
         "menuItens": "#181d22",
         "sub": "#181d22",
