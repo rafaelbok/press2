@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-
+import { systemVersion } from "../../package.json";
 import {
     Badge,
     Divider,
@@ -12,15 +12,15 @@ import {
 } from "@material-ui/core";
 
 import {
+    Link,
     AccountTreeOutlined,
     Code,
     ContactPhoneOutlined,
     DashboardOutlined,
-    DeveloperModeOutlined,
     LocalOffer,
-    MenuBook,
     PeopleAltOutlined,
     QuestionAnswerOutlined,
+    MenuBook,
     SettingsOutlined,
     SyncAlt,
     VpnKeyRounded,
@@ -48,32 +48,25 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function ListItemLink(props) {
-    const { icon, primary, to, href, className } = props;
+    const { icon, primary, to, className } = props;
     const classes = useStyles();
 
-    if (to) {
-        return (
-            <li className={classes.li}>
-                <ListItem button component={RouterLink} to={to} className={className}>
-                    {icon ? <ListItemIcon className={classes.icon}>{icon}</ListItemIcon> : null}
-                    <ListItemText primary={primary} />
-                </ListItem>
-            </li>
-        );
-    }
+    const renderLink = React.useMemo(
+        () =>
+            React.forwardRef((itemProps, ref) => (
+                <RouterLink to={to} ref={ref} {...itemProps} />
+            )),
+        [to]
+    );
 
-    if (href) {
-        return (
-            <li className={classes.li}>
-                <ListItem button component="a" href={href} className={className} target="_blank" rel="noopener noreferrer">
-                    {icon ? <ListItemIcon className={classes.icon}>{icon}</ListItemIcon> : null}
-                    <ListItemText primary={primary} />
-                </ListItem>
-            </li>
-        );
-    }
-
-    return null;
+    return (
+        <li className={classes.li}>
+            <ListItem button component={renderLink} className={className}>
+                {icon ? <ListItemIcon className={classes.icon}>{icon}</ListItemIcon> : null}
+                <ListItemText primary={primary} />
+            </ListItem>
+        </li>
+    );
 }
 
 const MainListItems = (props) => {
@@ -150,6 +143,7 @@ const MainListItems = (props) => {
                                 </Badge>
                             }
                         />
+
                         <ListItemLink
                             to="/users"
                             primary={i18n.t("mainDrawer.listItems.users")}
@@ -159,11 +153,6 @@ const MainListItems = (props) => {
                             to="/queues"
                             primary={i18n.t("mainDrawer.listItems.queues")}
                             icon={<AccountTreeOutlined />}
-                        />
-                        <ListItemLink
-                            to="/Integrations"
-                            primary={i18n.t("mainDrawer.listItems.integrations")}
-                            icon={<DeveloperModeOutlined />}
                         />
                         <ListItemLink
                             to="/settings"
@@ -177,21 +166,30 @@ const MainListItems = (props) => {
                         <ListItemLink
                             to="/api"
                             primary={i18n.t("mainDrawer.listItems.api")}
-                            icon={<Code />}
+                            icon={
+                                <Code />
+                            }
                         />
                         <ListItemLink
-                            href="https://docs.meuhub.com.br/categoria/wasap/"
+                            to="/apidocs"
                             primary={i18n.t("mainDrawer.listItems.apidocs")}
-                            icon={<MenuBook />}
+                            icon={
+                                <MenuBook />
+                            }
                         />
                         <ListItemLink
                             to="/apikey"
                             primary={i18n.t("mainDrawer.listItems.apikey")}
-                            icon={<VpnKeyRounded />}
+                            icon={
+                                <VpnKeyRounded />
+                            }
                         />
+
                     </>
                 )}
             />
+            <Divider className={classes.divider} />
+            <ListSubheader inset className={classes.sub}>v{systemVersion}</ListSubheader>
         </div>
     );
 };

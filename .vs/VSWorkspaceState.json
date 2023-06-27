@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\backend",
+    "\\backend\\src",
+    "\\backend\\src\\database\\seeds",
+    "\\docs",
+    "\\frontend\\src",
+    "\\frontend\\src\\layout",
+    "\\frontend\\src\\pages",
+    "\\frontend\\src\\pages\\Login",
+    "\\frontend\\src\\pages\\Signup"
   ],
+  "SelectedNode": "\\backend\\src\\app.ts",
   "PreviewInSolutionExplorer": false
 }
