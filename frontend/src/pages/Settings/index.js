@@ -176,7 +176,7 @@ const Settings = () => {
 
 		<div className={classes.root}>
 			<Paper className={classes.paper} style={{ margin: '10px', alignItems: 'center' }}>
-				<Typography variant="h6"><b>Configurações Gerais do WaSap</b></Typography>
+				<Typography variant="h6"><b>Configura&ccedil;&otilde;es Gerais do WaSap</b></Typography>
 			</Paper>
 			<div maxWidth="sm">
 				<div style={{ display: 'flex' }}>
