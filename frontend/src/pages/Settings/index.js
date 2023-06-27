@@ -180,8 +180,8 @@ const Settings = () => {
 			</Paper>
 			<div maxWidth="sm">
 				<div style={{ display: 'flex' }}>
-					<div style={{ width: '50%', paddingRight: '10px' }}>
-						<Container className={classes.container} maxWidth="xs">
+					<div style={{ width: '100%', paddingRight: '10px' }}>
+						<Container className={classes.container} maxWidth="sm">
 
 							<Paper className={classes.paper}>
 								<Tooltip title={i18n.t("settings.settings.userCreation.note")}>
