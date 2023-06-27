@@ -644,7 +644,7 @@ const Dashboard = () => {
                     component="h2"
                     className={classes.cardTitle}
                   >
-                    {"Promotores"}
+                    {"Positivas"}
                   </Typography>
                 </div>
                 <div className={classes.cardAvatar}>
@@ -696,7 +696,7 @@ const Dashboard = () => {
                     component="h2"
                     className={classes.cardTitle}
                   >
-                    {"Dretatores"}
+                    {"Negativas"}
                   </Typography>
                 </div>
                 <div className={classes.cardAvatar}>
