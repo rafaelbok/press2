@@ -286,7 +286,7 @@ const Tags = () => {
               <CSVLink
                 className={classes.csvbtn}
                 separator=";"
-                filename="mkthub-contacts.csv"
+                filename="wasap_tags.csv"
                 data={tags.flatMap((tag) => tag.contacts.map((contact) => ({
                   tagName: tag.name,
                   contactName: contact.name,
