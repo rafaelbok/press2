@@ -22,8 +22,6 @@ const useStyles = makeStyles(theme => ({
 		backgroundColor: theme.palette.background.default,
 		display: "flex",
 		alignItems: "center",
-		justifyContent: "center", // Adicionado para centralizar a div principal
-		flexDirection: "column", // Adicionado para empilhar os elementos
 		padding: theme.spacing(4),
 	},
 
