@@ -176,7 +176,7 @@ const Settings = () => {
 
 		<div className={classes.root}>
 			<Paper className={classes.paper} style={{ margin: '10px' }}>
-				<Typography variant="h6"><b>Configura&ccedil;&otilde;es Gerais</b></Typography>
+				<Typography variant="h6"><b>Configura&ccedil;&otilde;es Gerais WaSap</b></Typography>
 			</Paper>
 			<div maxWidth="sm">
 				<div style={{ display: 'flex' }}>
@@ -211,7 +211,7 @@ const Settings = () => {
 								</Tooltip>
 							</Paper>
 
-							<Typography variant="body2" gutterBottom></Typography>
+							{/*<Typography variant="body2" gutterBottom></Typography>
 
 							<Paper className={classes.paper}>
 								<Tooltip title={i18n.t("settings.settings.CheckMsgIsGroup.note")}>
@@ -224,7 +224,7 @@ const Settings = () => {
 										} label={i18n.t("settings.settings.CheckMsgIsGroup.name")}
 									/>
 								</Tooltip>
-							</Paper>
+							</Paper> */}
 
 							<Typography variant="body2" gutterBottom></Typography>
 							<Paper className={classes.paper}>
