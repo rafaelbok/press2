@@ -335,7 +335,7 @@ const Contacts = () => {
 
                     className={classes.csvbtn}
                     separator=";"
-                    filename={'contacts.csv'}
+                    filename={'wasap_contatos.csv'}
                     data={
                       contacts.map((contact) => ({
                         name: contact.name,
